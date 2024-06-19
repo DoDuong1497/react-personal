@@ -5,4 +5,10 @@ export default {
     extend: {},
   },
   plugins: [],
+  darkMode: 'class',
 };
+
+
+// localhost:3000
+// localhost:3000/product/list
+// localhost:3000/product/123

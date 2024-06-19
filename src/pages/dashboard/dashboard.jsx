@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import PersonalForm from './components/PersonalForm';
-import PersonalList from './components/PersonalList';
-import PersonalPagination from './components/PersonalPagination';
+import PersonalForm from '../../components/PersonalForm';
+import PersonalList from '../../components/PersonalList';
+import PersonalPagination from '../../components/PersonalPagination';
 
 const Personal = () => {
   const [personals, setPersonals] = useState([]);
