@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PersonalItem = ({ data, handleDeletePersonal }) => {
+const PersonalItem = ({ data, handleDeletePersonal, handleEditPersonal }) => {
   return (
     <tr className='odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700'>
       <th
@@ -17,6 +17,7 @@ const PersonalItem = ({ data, handleDeletePersonal }) => {
         <button
           type='button'
           className='text-blue-700 font-medium text-sm mr-5'
+          onClick={() => handleEditPersonal(data.id)}
         >
           Edit
         </button>

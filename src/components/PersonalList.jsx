@@ -1,7 +1,7 @@
 import React from 'react';
 import PersonalItem from './PersonalItem';
 
-const PersonalList = ({ datas, handleDeletePersonal }) => {
+const PersonalList = ({ datas, handleDeletePersonal, handleEditPersonal }) => {
   return (
     <div className='relative overflow-x-auto shadow-md rounded-lg mb-6'>
       <table className='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'>
@@ -36,6 +36,7 @@ const PersonalList = ({ datas, handleDeletePersonal }) => {
                   key={item.id}
                   data={item}
                   handleDeletePersonal={handleDeletePersonal}
+                  handleEditPersonal={handleEditPersonal}
                 />
               ))}
             </>
